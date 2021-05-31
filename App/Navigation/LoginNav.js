@@ -1,13 +1,11 @@
 import React from 'react';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
-import HomeScreen from '../Screens/HomeScreen';
 import AboutUs from '../Screens/AboutUs';
 import ContactUs from '../Screens/ContactUs';
 import CheckOut from '../Screens/CheckOut';
-import Login from '../Screens/Login';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import CardNav from './CardNav';
+import SignupNav from './SignupNav';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -16,7 +14,7 @@ function LoginNav(props) {
     <Tab.Navigator initialRouteName="Login">
       <Tab.Screen
         name="Login"
-        component={Login}
+        component={SignupNav}
         options={{
           tabBarIcon: ({size, color}) => (
             <Icon name="login" size={size} color={color} size={26} />

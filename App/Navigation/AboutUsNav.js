@@ -1,16 +1,12 @@
 import React from 'react';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
-import HomeScreen from '../Screens/HomeScreen';
 import AboutUs from '../Screens/AboutUs';
 import ContactUs from '../Screens/ContactUs';
 import CheckOut from '../Screens/CheckOut';
-import Login from '../Screens/Login';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import {createDrawerNavigator} from '@react-navigation/drawer';
 import CardNav from './CardNav';
+import SignupNav from './SignupNav';
 
-const Drawer = createDrawerNavigator();
 const Tab = createMaterialBottomTabNavigator();
 
 function AboutUsNav(props) {
@@ -18,7 +14,7 @@ function AboutUsNav(props) {
     <Tab.Navigator initialRouteName="AboutUs">
       <Tab.Screen
         name="Login"
-        component={Login}
+        component={SignupNav}
         options={{
           tabBarIcon: ({size, color}) => (
             <Icon name="login" size={size} color={color} size={26} />

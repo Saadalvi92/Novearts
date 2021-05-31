@@ -6,6 +6,7 @@ import CheckOutNav from './CheckOutNav';
 import ContactUsNav from './ContactUsNav';
 import LoginNav from './LoginNav';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+
 const Drawer = createDrawerNavigator();
 function DrawerNav(props) {
   return (
